@@ -4,7 +4,7 @@ pipeline {
   stage('Docker Build and Tag') {
            steps {
               
-                sh 'docker build -t nginxtest:latest divyadockerhub1998/nginxtest:latest ' 
+                sh 'docker build -t nginxtest:latest . ' 
               //  sh 'docker tag nginxtest divyadockerhub1998/nginxtest:latest'
               //  sh 'docker tag nginxtest divyadockerhub1998/nginxtest:$BUILD_NUMBER'
                
